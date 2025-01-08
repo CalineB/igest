@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-main {
-    overflow: visible;
-}
-
 html, body {
     height: 100vh;
     margin: 0;
@@ -22,8 +18,10 @@ html, body {
 }
 
 main {
-    flex:1;
-    margin-bottom: 5rem;
+    overflow: visible;
+    flex: 1;
+    margin-top: 15rem;
+    margin-bottom: 15rem !important;
 }
 
 .intro {

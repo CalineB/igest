@@ -9,6 +9,8 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: black;
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo {

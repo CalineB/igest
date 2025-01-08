@@ -12,6 +12,7 @@ footer {
     padding: .5rem 0 .5rem;
     margin-top: auto;
     position: relative;
+    z-index: 1000;
 }
 
 footer p, a {
