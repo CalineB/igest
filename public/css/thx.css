@@ -1,0 +1,42 @@
+:root {
+    --gold-: rgb(166, 119, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    background-color: var(--gold-);
+}
+
+main {
+    overflow: auto;
+    height: 100vh;
+}
+
+main {
+    flex:1;
+    background-color: var(--gold-) ;
+}
+
+
+@media (min-width: 175px) and (max-width: 452px) {
+    main {
+        overflow: auto;
+        height: 100%;
+        margin-bottom: 5rem;
+    }
+
+    div#response-message {
+        margin-top: 5rem !important;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}

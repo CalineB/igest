@@ -181,7 +181,6 @@ body {
     align-items: center;
     width: 48%;
     margin-left: 3.5rem;
-
 }
 
 .input-group-text {
@@ -241,6 +240,12 @@ input[type="submit"]:hover {
         margin-bottom: 2rem;
     }
 
+
+
+    .col.right {
+        margin-bottom: 5rem
+    }
+
 }
 
 
@@ -297,6 +302,11 @@ input[type="submit"]:hover {
         font-weight: bold;
         text-align: center;
         margin: 1rem auto;
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
     }
+
+    .field {
+        margin-bottom: 15rem;
+    }
+
 }

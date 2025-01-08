@@ -162,6 +162,7 @@ i:hover {
         grid-template-columns: 1fr;
         gap: 1rem;
         justify-items: center;
+        margin-bottom: 5rem;
     }
 
     .card {
@@ -173,5 +174,22 @@ i:hover {
 @media (max-width: 450px) {
     h3.default-text {
         font-size: 1.3rem;
+    }
+
+    .cards {
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media (min-width: 175px) and (max-width: 375px) {
+    h3.default-text {
+        font-size: 1rem;
+    }
+
+    .services {
+        font-size: .8rem;
+        margin-top: .9rem;
+        line-height: 1;
     }
 }
