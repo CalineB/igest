@@ -10,6 +10,14 @@ window.addEventListener("scroll", () => {
 
 scrollToTopBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    document.documentElement.scrollTop = 0; //Chrome, Firefox
-    document.body.scrollTop = 0; //Safari
+    
+    const scrollToTop = () => {
+        const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scrollTo(0, Math.max(0, currentScroll - currentScroll / 10));
+            requestAnimationFrame(scrollToTop);
+        }
+    };
+    
+    scrollToTop();
 });

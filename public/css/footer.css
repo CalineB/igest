@@ -42,3 +42,12 @@ a#scroll-to-top.scroll-btn {
     
 
 }
+
+
+@media (min-width: 175px) and (max-width: 375px) {
+    a#scroll-to-top.scroll-btn {
+        font-size: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
+}

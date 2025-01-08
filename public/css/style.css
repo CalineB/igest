@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: auto;
+main {
+    overflow: visible;
 }
 
 html, body {
@@ -99,9 +99,7 @@ b {
 
 @media (min-width: 175px) and (max-width: 375px) {
     main {
-        overflow: auto;
-        height: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 15rem;
     }
 }
 
