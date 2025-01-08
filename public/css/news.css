@@ -1,0 +1,11 @@
+:root {
+    --gold-: rgb(166, 119, 0);
+}
+
+.infoGov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}

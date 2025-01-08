@@ -1,0 +1,177 @@
+:root {
+    --gold-: rgb(166, 119, 0);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1500px;
+    align-items: center;
+    margin: 2rem 2rem 2rem 2rem;
+    height: 100%;
+    margin-bottom: 7rem;
+}
+
+
+h3 {
+    color: var(--gold-);
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    position: relative;
+    -webkit-text-stroke: 1px black; 
+}
+
+
+.card {
+    height: 12rem;
+    width: 15rem;
+    background-color: rgb(232, 225, 214);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 3% 8%;
+    box-sizing: border-box;
+    border: 0.2px solid silver;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+}
+
+.card:after{
+    content: "";
+    position: absolute;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    right: -2rem;
+    bottom: -2rem; 
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover:after{
+    width: 225%;
+    top: -100%
+}
+
+.card i {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--gold-);
+}
+
+
+
+
+.card .default-text,
+.card .hover-text {
+    position: absolute;
+    backface-visibility: visible;
+    box-sizing: border-box;
+}
+
+.card .default-text {
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    top: 50%;
+    opacity: 1;
+}
+
+.card:hover i,
+.card:hover .hover-text {
+    transform: rotateY(180deg);
+}
+
+.card .hover-text {
+    opacity: 0;
+    position: absolute;
+    top: -2%;
+    max-width: 90%;
+    margin: 50% auto;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.card:hover .hover-text {
+    opacity: 1;
+    display: flex;
+    top: -5rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card:hover .default-text {
+    opacity: 0;
+}
+
+
+i:hover {
+    display: none;
+}
+
+
+.card:hover {
+    transform: rotateY(180deg);
+    border-color: black;
+
+}
+
+.card:hover i {
+    color: black;
+}
+
+
+.card .hover-text ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.card .hover-text li.services {
+    color: black;
+}
+
+
+@media (max-width:570px) {
+    .card {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media (max-width:550px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .card {
+        width: 60%;
+    }  
+}
+
+
+@media (max-width: 450px) {
+    h3.default-text {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+    --gold-: rgb(166, 119, 0);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: var(--gold-);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: .5rem 0 .5rem;
+}
+
+footer p, a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .3rem;
+}
+
+footer a {
+    color: antiquewhite;
+}
+
+
+a#scroll-to-top.scroll-btn {
+    position: absolute;
+    font-size: 2rem;
+    right: 2rem;
+    bottom: 1rem;
+}
+
