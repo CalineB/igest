@@ -94,7 +94,7 @@ li.navLink a:hover {
     .logo {
         display: block;
         height: 5rem;
-        width: 6rem;
+        width: 5rem;
         align-self: flex-start;
         margin-top:.5rem;
         position: sticky;
